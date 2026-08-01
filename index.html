@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///C:/Users/Jazzy/Downloads/index_31.html -->
+<html lang="en" class="plt-desktop md" mode="md"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style data-styles="">slot-fb{display:contents}slot-fb[hidden]{display:none}acknowledge-message,attachment-grid,audio-player,chat-conversation,chat-feedback,chat-form,chat-input,chat-message,chat-message-status,chat-pane,chat-selection,chat-widget,ion-accordion,ion-accordion-group,ion-action-sheet,ion-alert,ion-app,ion-avatar,ion-back-button,ion-backdrop,ion-badge,ion-breadcrumb,ion-breadcrumbs,ion-button,ion-buttons,ion-card,ion-card-content,ion-card-header,ion-card-subtitle,ion-card-title,ion-checkbox,ion-chip,ion-col,ion-content,ion-datetime,ion-datetime-button,ion-fab,ion-fab-button,ion-fab-list,ion-footer,ion-grid,ion-header,ion-icon,ion-img,ion-infinite-scroll,ion-infinite-scroll-content,ion-input,ion-item,ion-item-divider,ion-item-group,ion-item-option,ion-item-options,ion-item-sliding,ion-label,ion-list,ion-list-header,ion-loading,ion-menu,ion-menu-button,ion-menu-toggle,ion-modal,ion-nav,ion-nav-link,ion-note,ion-picker,ion-picker-column,ion-picker-column-internal,ion-picker-internal,ion-popover,ion-progress-bar,ion-radio,ion-radio-group,ion-range,ion-refresher,ion-refresher-content,ion-reorder,ion-reorder-group,ion-ripple-effect,ion-route,ion-route-redirect,ion-router,ion-router-link,ion-router-outlet,ion-row,ion-searchbar,ion-segment,ion-segment-button,ion-select,ion-select-option,ion-select-popover,ion-skeleton-text,ion-spinner,ion-split-pane,ion-tab,ion-tab-bar,ion-tab-button,ion-tabs,ion-text,ion-textarea,ion-thumbnail,ion-title,ion-toast,ion-toggle,ion-toolbar,notification-banner,notification-list,recaptcha-container,reconnecting-banner,restart-chat,voice-call-error-banner,voice-recorder{visibility:hidden}.hydrated{visibility:inherit}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Paradise | Dog Sitting, Walking &amp; Boarding | Brighton, Trenton, Belleville, Cobourg</title>
+  <meta name="description" content="Professional dog sitting, walking and boarding in Brighton, Trenton, Belleville and Cobourg. $30/day per dog. Book online today!">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./index_files/css2" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:      #FAF6EF;
+      --bark:       #3D2B1F;
+      --moss:       #4A6741;
+      --moss-light: #6B9464;
+      --clay:       #C97B3A;
+      --clay-light: #E8A05A;
+      --sand:       #E8D9C0;
+      --white:      #FFFFFF;
+      --text-dark:  #2A1F14;
+      --text-mid:   #5C4A37;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--cream);
+      color: var(--text-dark);
+      line-height: 1.6;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 4rem;
+      background: rgba(250,246,239,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--sand);
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--bark);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-logo span { color: var(--clay); }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-mid);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--clay); }
+
+    .nav-cta {
+      background: var(--clay) !important;
+      color: var(--white) !important;
+      padding: 0.5rem 1.4rem;
+      border-radius: 50px;
+      transition: background 0.2s !important;
+    }
+
+    .nav-cta:hover { background: var(--clay-light) !important; }
+
+    /* ── HERO ── */
+    .hero {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(to right, rgba(20,40,15,0.82) 38%, rgba(20,40,15,0.15) 100%),
+        url('hero.jpg') center 80%/cover no-repeat;
+      padding: 7rem 4rem 4rem;
+    }
+
+    .hero-content { max-width: 600px; }
+
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--clay);
+      color: var(--white);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 5.5vw, 5rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.08;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 em { font-style: normal; color: var(--clay-light); }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 2.25rem;
+      max-width: 480px;
+    }
+
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .btn-primary {
+      background: var(--clay);
+      color: var(--white);
+      padding: 0.9rem 2.1rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--clay-light); transform: translateY(-2px); }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      padding: 0.9rem 2.1rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 2px solid rgba(255,255,255,0.65);
+      transition: border-color 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+    .btn-secondary:hover { border-color: var(--white); transform: translateY(-2px); }
+
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      width: 100%;
+      background: var(--bark);
+      padding: 1.25rem 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      color: var(--sand);
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+
+    /* ── SECTIONS ── */
+    section { width: 100%; padding: 5.5rem 4rem; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+
+    .section-eyebrow {
+      display: inline-block;
+      color: var(--clay);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      color: var(--bark);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .section-sub {
+      color: var(--text-mid);
+      font-size: 1.05rem;
+      max-width: 580px;
+      margin-bottom: 3rem;
+    }
+
+    /* ── SERVICES ── */
+    .services { background: var(--cream); }
+
+    .services-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+    }
+
+    .services-tagline {
+      padding: 2rem;
+    }
+
+    .services-tagline p {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+      font-weight: 700;
+      color: var(--bark);
+      line-height: 1.3;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--sand);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .service-card:hover { transform: translateY(-5px); box-shadow: 0 16px 48px rgba(61,43,31,0.13); }
+
+    .service-card-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .service-card-body { padding: 1.75rem; }
+
+    .service-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--bark);
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      color: var(--text-mid);
+      font-size: 0.97rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .service-price {
+      display: inline-block;
+      background: var(--clay);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.4rem 1.1rem;
+      border-radius: 50px;
+    }
+
+    /* ── ABOUT ── */
+    .about { background: var(--sand); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about-img {
+      border-radius: 22px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .about-img img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+
+    .about-badge {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      background: var(--bark);
+      color: var(--white);
+      padding: 0.75rem 1.25rem;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .about-badge span {
+      display: block;
+      font-size: 1.6rem;
+      font-family: 'Playfair Display', serif;
+      color: var(--clay-light);
+    }
+
+    .about-content p {
+      color: var(--text-mid);
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .about-list { list-style: none; margin-top: 1.5rem; }
+
+    .about-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--text-mid);
+      font-weight: 600;
+      margin-bottom: 0.85rem;
+    }
+    .about-list li::before { content: '🐾'; font-size: 1rem; }
+
+    /* ── GALLERY ── */
+    .gallery { background: var(--cream); }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover img { transform: scale(1.04); }
+
+    .gallery-item.tall img { height: 540px; }
+    .gallery-item.wide { grid-column: span 2; }
+    .gallery-item.wide img { height: 260px; }
+
+    /* ── AREA ── */
+    .area { background: var(--sand); }
+
+    .area-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .area-card {
+      background: var(--white);
+      border: 1px solid var(--sand);
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .area-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(61,43,31,0.1); }
+    .area-card .area-icon { font-size: 2rem; margin-bottom: 0.6rem; }
+
+    .area-card h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--bark);
+      font-size: 1.25rem;
+    }
+    .area-card p { color: var(--text-mid); font-size: 0.875rem; margin-top: 0.3rem; }
+
+    /* ── BOOKING ── */
+    .booking { background: var(--moss); }
+    .booking .section-eyebrow { color: var(--clay-light); }
+    .booking .section-title { color: var(--white); }
+    .booking .section-sub { color: rgba(255,255,255,0.8); }
+
+    /* ── CONTACT ── */
+    .contact { background: var(--bark); }
+    .contact .section-eyebrow { color: var(--clay-light); }
+    .contact .section-title { color: var(--white); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info { color: rgba(255,255,255,0.85); }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      color: rgba(255,255,255,0.9);
+      font-weight: 600;
+    }
+    .contact-item a { color: var(--clay-light); text-decoration: none; }
+    .contact-item a:hover { text-decoration: underline; }
+
+    .contact-form {
+      background: rgba(255,255,255,0.07);
+      border-radius: 18px;
+      padding: 2.25rem;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .contact-form h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--white);
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { margin-bottom: 1rem; }
+
+    .form-group label {
+      display: block;
+      color: rgba(255,255,255,0.65);
+      font-size: 0.83rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.08);
+      color: var(--white);
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: rgba(255,255,255,0.35); }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus { border-color: var(--clay-light); }
+    .form-group select option { background: var(--bark); color: var(--white); }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--clay);
+      color: var(--white);
+      border: none;
+      padding: 0.9rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: 'Nunito', sans-serif;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 0.5rem;
+    }
+    .btn-submit:hover { background: var(--clay-light); }
+
+    /* ── FOOTER ── */
+    footer {
+      width: 100%;
+      background: #1E1108;
+      padding: 2rem 4rem;
+      text-align: center;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--clay-light); text-decoration: none; }
+
+    /* ── PHONE BUBBLE ── */
+    .phone-bubble {
+      position: fixed;
+      bottom: 2rem;
+      left: 2rem;
+      background: var(--clay);
+      color: var(--white);
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      box-shadow: 0 4px 24px rgba(201,123,58,0.55);
+      text-decoration: none;
+      z-index: 200;
+      transition: transform 0.2s, background 0.2s;
+    }
+    .phone-bubble:hover { transform: scale(1.1); background: var(--clay-light); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav, section, .trust-bar, footer { padding-left: 2rem; padding-right: 2rem; }
+      .hero { padding: 6rem 2rem 3rem; }
+      .services-layout { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-item.wide { grid-column: span 1; }
+      .area-grid { grid-template-columns: repeat(2, 1fr); }
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+<script type="module" src="./index_files/chat-widget.esm.js.download"></script><script nomodule="" src="./index_files/chat-widget.js.download" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/chat-widget.js" data-cookie-banner="undefined" data-stencil-namespace="https://widgets.leadconnectorhq.comchat-widget"></script><script src="./index_files/libphonenumber-js.min.js.download" async=""></script><link rel="stylesheet" href="./index_files/css"><link rel="stylesheet" href="./index_files/css(1)"></head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="file:///C:/Users/Jazzy/Downloads/index_31.html#" class="nav-logo">🐾 Pet <span>Paradise</span></a>
+    <ul class="nav-links">
+      <li><a href="file:///C:/Users/Jazzy/Downloads/index_31.html#services">Stays</a></li>
+      <li><a href="file:///C:/Users/Jazzy/Downloads/index_31.html#about">About</a></li>
+      <li><a href="file:///C:/Users/Jazzy/Downloads/index_31.html#gallery">Gallery</a></li>
+      <li><a href="file:///C:/Users/Jazzy/Downloads/index_31.html#area">Service Area</a></li>
+      <li><a href="file:///C:/Users/Jazzy/Downloads/index_31.html#contact">Contact</a></li>
+      <li><a href="file:///C:/Users/Jazzy/Downloads/index_31.html#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="hero-eyebrow">Brighton · Trenton · Belleville · Cobourg</span>
+      <h1>Your Dog Deserves a <em>Paradise</em></h1>
+      <p>Professional, loving dog care while you're away. We treat every pup like family — because that's exactly what they are.</p>
+      <div class="hero-btns">
+        <a href="file:///C:/Users/Jazzy/Downloads/index_31.html#contact" class="btn-primary">Request a Stay — $30/day</a>
+        <a href="tel:3433370226" class="btn-secondary">📞 Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-item">🏡 Home-Like Environment</div>
+    <div class="trust-item">📱 Daily Photo Updates</div>
+    <div class="trust-item">💛 Personalized Attention</div>
+    <div class="trust-item">📅 Easy Online Booking</div>
+    <div class="trust-item">📞 (343) 337-0226</div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <span class="section-eyebrow">While You're Away</span>
+      <h2 class="section-title">A Holiday for Your Dog</h2>
+      <div class="services-layout">
+        <div class="services-grid">
+
+          <div class="service-card">
+            <img class="service-card-img" src="./index_files/service-sitting.jpg" alt="Dog sitting at home" style="object-position: center 30%;">
+            <div class="service-card-body">
+              <h3>Day Stay</h3>
+              <p>A full day of play, cuddles, and cozy naps in a real home. Your dog won't want to leave.</p>
+              <span class="service-price">$30 / day per dog</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <img class="service-card-img" src="./index_files/service-boarding.jpg" alt="Dog relaxing indoors" style="object-position: 40% center;">
+            <div class="service-card-body">
+              <h3>Overnight Stay</h3>
+              <p>Tuck your pup in for the night in a warm, loving home. No kennels, no cages — just good dreams.</p>
+              <span class="service-price">$30 / day per dog</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="services-tagline">
+          <p>Home, only better — your dog gets the full holiday treatment while you're away.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="./index_files/about.jpg" alt="Happy dog at Pet Paradise">
+          <div class="about-badge">
+            <span>❤️ Loved</span>
+            Like Family
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-eyebrow">About Us</span>
+          <h2 class="section-title">A Place Your Dog Will Love Coming Back To</h2>
+          <p>At Pet Paradise, we believe every dog deserves attentive, personalized care. We're based in Brighton, Ontario and serve the surrounding communities with genuine love for animals.</p>
+          <p>Whether it's a day visit or an overnight stay, we treat every dog like our own — with the warmth, patience, and attention they deserve.</p>
+          <ul class="about-list">
+            <li>A real home — not a kennel</li>
+            <li>Daily photo and video updates sent to you</li>
+            <li>Serving Brighton, Trenton, Belleville &amp; Cobourg</li>
+            <li>Easy online booking and 24/7 phone support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="section-inner">
+      <span class="section-eyebrow">Happy Pups</span>
+      <h2 class="section-title">Life at Pet Paradise</h2>
+      <p class="section-sub">Real dogs, real fun — a glimpse into a typical day with us.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="./index_files/gallery1.jpg" alt="Dog at sunset" style="object-position: center 75%;">
+        </div>
+        <div class="gallery-item">
+          <img src="./index_files/gallery2.jpg" alt="Shelby portrait" style="object-position: center 20%;">
+        </div>
+        <div class="gallery-item">
+          <img src="./index_files/gallery3.jpg" alt="Two goldens" style="object-position: center center;">
+        </div>
+        <div class="gallery-item">
+          <img src="./index_files/gallery4.jpg" alt="Black lab running" style="object-position: center center;">
+        </div>
+        <div class="gallery-item">
+          <img src="./index_files/gallery5.jpg" alt="Dog in field" style="object-position: center 70%;">
+        </div>
+        <div class="gallery-item">
+          <img src="./index_files/gallery6.jpg" alt="Corgi running inside" style="object-position: center center;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="area" id="area">
+    <div class="section-inner">
+      <span class="section-eyebrow">Where We Serve</span>
+      <h2 class="section-title">Our Service Area</h2>
+      <p class="section-sub">We provide dog care across the Quinte and Northumberland region. Not sure if we cover your area? Give us a call!</p>
+      <div class="area-grid">
+        <div class="area-card">
+          <div class="area-icon">📍</div>
+          <h3>Brighton</h3>
+          <p>Our home base</p>
+        </div>
+        <div class="area-card">
+          <div class="area-icon">📍</div>
+          <h3>Trenton</h3>
+          <p>Quinte West &amp; area</p>
+        </div>
+        <div class="area-card">
+          <div class="area-icon">📍</div>
+          <h3>Belleville</h3>
+          <p>City &amp; surrounding</p>
+        </div>
+        <div class="area-card">
+          <div class="area-icon">📍</div>
+          <h3>Cobourg</h3>
+          <p>Northumberland county</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUEST A STAY -->
+  <section class="booking" id="booking">
+    <div class="section-inner" style="text-align:center;">
+      <span class="section-eyebrow">Reserve a Spot</span>
+      <h2 class="section-title">Ready to Book a Stay?</h2>
+      <p class="section-sub">We'd love to welcome your pup to Pet Paradise! The first step is a quick meet and greet so we can get to know your dog. Reach out below or give us a call and we'll get everything set up.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;">
+        <a href="file:///C:/Users/Jazzy/Downloads/index_31.html#contact" class="btn-primary" style="background:var(--clay);color:white;padding:1rem 2rem;border-radius:50px;font-weight:700;text-decoration:none;font-size:1.1rem;">Send Us a Message</a>
+        <a href="tel:3433370226" class="btn-secondary" style="border:2px solid white;color:white;padding:1rem 2rem;border-radius:50px;font-weight:700;text-decoration:none;font-size:1.1rem;">📞 Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <span class="section-eyebrow">Get in Touch</span>
+      <h2 class="section-title">We'd Love to Meet Your Dog</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p style="margin-bottom:2rem;color:rgba(255,255,255,0.75);font-size:1.05rem;">Have questions before booking? Reach out anytime — our phone agent answers 24/7, or send us a message below.</p>
+          <div class="contact-item">📞 <a href="tel:3433370226">(343) 337-0226</a></div>
+          <div class="contact-item">📍 Brighton, Ontario, Canada</div>
+          <div class="contact-item">🕐 Available 7 days a week</div>
+          <div class="contact-item">💰 $30 / day per dog</div>
+        </div>
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Jane Smith">
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="(613) 555-0100">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Your Dog's Name &amp; Breed</label>
+            <input type="text" placeholder="e.g. Max — Golden Retriever">
+          </div>
+          <div class="form-group">
+            <label>Service Needed</label>
+            <select>
+              <option>Day Stay</option>
+              <option>Overnight Stay</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell us about your dog and what you need..."></textarea>
+          </div>
+          <button class="btn-submit">Send Message 🐾</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Pet Paradise · Brighton, Ontario · <a href="tel:3433370226">(343) 337-0226</a> · $30/day per dog</p>
+    <p style="margin-top:0.5rem;">Serving Brighton · Trenton · Belleville · Cobourg</p>
+  </footer>
+
+  <a href="tel:3433370226" class="phone-bubble" title="Call Pet Paradise">📞</a>
+
+  <!-- GHL CHAT WIDGET -->
+  <script src="./index_files/loader.js.download" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a6b8de826a343b92bad9475" data-loader-instance="loader-1785589594430-48ao58guf">
+  </script>
+
+
+
+<chat-widget data-loader-instance-id="loader-1785589594430-48ao58guf" source="custom-code" class="hydrated" data-active="false"><template shadowrootmode="open"><div data-active="false"><div class="lc_text-widget" id="lc_text-widget" style="right: 20px; bottom: 20px;"><style>.iti__flag {background-image: url(https://widgets.leadconnectorhq.com/chat-widget/assets/flags.png) !important}  :host{all:initial; --chat-widget-height:83vh; --chat-widget-width:340px; --chat-widget-max-height:625px; --chat-widget-branding-max-height:660px; --chat-widget-inline-position:relative; --chat-widget-active-color:#C97B3AFF; --chat-widget-bubble-color:#C97B3AFF; --chat-widget-primary-color:#C97B3AFF; --chat-widget-primary-solid-color:#C97B3AFF; --ion-color-primary:#C97B3AFF; --ion-color-primary-contrast:#ffffff; --chat-widget-background-color:#ffffff; --chat-widget-header-color:#C97B3AFF; --chat-widget-header-darken-color:#964807; --chat-widget-button-color:#C97B3AFF; --chat-widget-avatar-background-color:#ffffff; --chat-widget-avatar-border-color:#C97B3AFF; --chat-widget-received-message-color:#F2F4F7; --chat-widget-sender-message-color:#C97B3AFF; --chat-widget-sender-message-text-color:#ffffff; --chat-widget-received-message-text-color:#111828; --chat-widget-header-message-text-color:#ffffff; --chat-widget-welcome-message-text-color:#344054; --chat-widget-system-message-text-color:#344054; --chat-widget-font-family:Roboto, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif; --ion-font-family:Roboto, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif; --color:#C97B3AFF ;--chat-widget-prompt-arrow-bottom:-6px; --chat-widget-prompt-arrow-right:18px; --chat-widget-prompt-arrow-left:unset}</style><link rel="stylesheet" href="https://stcdn.leadconnectorhq.com/intl-tel-input/17.0.12/css/intlTelInput.min.css"><div class="lc_text-widget--prompt" style="bottom: 0px; right: 0px;"><div class="lc_text-widget_prompt--msg-bubble"><img alt="Avatar" src="https://widgets.leadconnectorhq.com/chat-widget/assets/defaultAvatar.png" class="lc_text-widget_prompt--avatar circular-image" width="48" height="48" decoding="async"><div class="lc_text-widget_prompt--prompt-text">Hi there! Have a question? Chat with us here.</div><button class="lc_text-widget_prompt--prompt-close" aria-label="Close prompt"><svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="24" height="24" viewBox="0 0 23.8 23.9" fill="#fff" style="width: 24px; height: 24px;"><defs></defs><path d="M13.3 11.9L23.5 22.2C23.9 22.6 23.9 23.2 23.5 23.6 23.3
+        23.8 23.1 23.9 22.8 23.9 22.6 23.9 22.3 23.8 22.1 23.6L11.9 13.4 1.7
+        23.6C1.5 23.8 1.2 23.9 1 23.9 0.7 23.9 0.5 23.8 0.3 23.6 -0.1 23.2-0.1
+        22.6 0.3 22.2L10.5 11.9 0.3 1.7C-0.1 1.3-0.1 0.7 0.3 0.3 0.7-0.1 1.3-0.1
+        1.7 0.3L11.9 10.5 22.1 0.3C22.5-0.1 23.1-0.1 23.5 0.3 23.9 0.7 23.9 1.3
+        23.5 1.7L13.3 11.9Z" class="cls-1"></path></svg></button></div></div><button class="lc_text-widget--bubble" data-chat-type="liveChat" id="lc_text-widget--btn" aria-label="Select to open the chat widget" style="right: 20px; bottom: 20px;"><div class="icon widget-open-icon active"><svg width="26" height="26" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.09436 10.2288C5.03221 9.82823 4.99996 9.41786 4.99996 9C4.99996 4.58172 8.60525 1 13.0526 1C17.4999 1 21.1052 4.58172 21.1052 9C21.1052 9.99807 20.9213 10.9535 20.5852 11.8345C20.5154 12.0175 20.4804 12.109 20.4646 12.1804C20.4489 12.2512 20.4428 12.301 20.4411 12.3735C20.4394 12.4466 20.4493 12.5272 20.4692 12.6883L20.8717 15.9585C20.9153 16.3125 20.9371 16.4895 20.8782 16.6182C20.8266 16.731 20.735 16.8205 20.6211 16.8695C20.4911 16.9254 20.3146 16.8995 19.9617 16.8478L16.7765 16.3809C16.6101 16.3565 16.527 16.3443 16.4512 16.3448C16.3763 16.3452 16.3245 16.3507 16.2511 16.3661C16.177 16.3817 16.0823 16.4172 15.893 16.4881C15.0097 16.819 14.0524 17 13.0526 17C12.6344 17 12.2237 16.9683 11.8227 16.9073M6.63158 21C9.59648 21 12 18.5376 12 15.5C12 12.4624 9.59648 10 6.63158 10C3.66668 10 1.26316 12.4624 1.26316 15.5C1.26316 16.1106 1.36028 16.6979 1.53955 17.2467C1.61533 17.4787 1.65322 17.5947 1.66566 17.6739C1.67864 17.7567 1.68091 17.8031 1.67608 17.8867C1.67145 17.9668 1.65141 18.0573 1.61134 18.2383L1 21L3.9948 20.591C4.15827 20.5687 4.24 20.5575 4.31137 20.558C4.38652 20.5585 4.42641 20.5626 4.50011 20.5773C4.5701 20.5912 4.67416 20.6279 4.88227 20.7014C5.43059 20.8949 6.01911 21 6.63158 21Z" stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></button></div></div></template><div id="lc-captcha"></div></chat-widget></body></html>
